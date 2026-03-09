@@ -24,14 +24,12 @@ Table of Contents
 .. toctree::
     :caption: Tutorials
 
-.. todo:: Add any Learn guide links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
+    Adafruit AS7331 UV / UVA / UVB / UVC Sensor Learn Guide <https://learn.adafruit.com/adafruit-as7331-uv-uva-uvb-uvc-sensor>
 
 .. toctree::
     :caption: Related Products
 
-.. todo:: Add any product links here. If there are none, then simply delete this todo and leave
-    the toctree above for use later.
+    Adafruit AS7331 UV / UVA / UVB / UVC Sensor Breakout - STEMMA QT / Qwiic <https://www.adafruit.com/product/6476>
 
 .. toctree::
     :caption: Other Links
