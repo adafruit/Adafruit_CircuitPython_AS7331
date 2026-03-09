@@ -38,19 +38,10 @@ This is easily achieved by downloading
 or individual libraries can be installed using
 `circup <https://github.com/adafruit/circup>`_.
 
-
-
-.. todo:: Describe the Adafruit product this library works with. For PCBs, you can also add the
-image from the assets folder in the PCB's GitHub repo.
-
 `Purchase one from the Adafruit shop <http://www.adafruit.com/products/6476>`_
 
 Installing from PyPI
 =====================
-.. note:: This library is not available on PyPI yet. Install documentation is included
-   as a standard element. Stay tuned for PyPI availability!
-
-.. todo:: Remove the above note if PyPI version is/will be available at time of release.
 
 On supported GNU/Linux systems like the Raspberry Pi, you can install the driver locally `from
 PyPI <https://pypi.org/project/adafruit-circuitpython-as7331/>`_.
@@ -101,8 +92,21 @@ Or the following command to update an existing version:
 Usage Example
 =============
 
-.. todo:: Add a quick, simple example. It and other examples should live in the
-examples folder and be included in docs/examples.rst.
+.. code-block:: python
+
+    import time
+    import board
+    import adafruit_as7331
+
+    i2c = board.I2C()
+    sensor = adafruit_as7331.AS7331(i2c)
+
+    while True:
+        uva, uvb, uvc = sensor.one_shot()
+        print(f"UVA: {uva:.2f}  UVB: {uvb:.2f}  UVC: {uvc:.2f}  µW/cm²")
+        print(f"Temperature: {sensor.temperature:.1f} °C")
+        print()
+        time.sleep(1)
 
 Documentation
 =============
