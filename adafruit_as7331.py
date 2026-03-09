@@ -402,7 +402,7 @@ class AS7331:  # noqa: PLR0904
 
         return self._read_all_uv()
 
-    def raw_one_shot(self) -> Tuple(float, float, float):
+    def raw_one_shot(self) -> Tuple[float, float, float]:
         """Perform a single measurement in command mode and return raw counts.
 
         Configures the sensor for CMD mode, triggers a measurement,
@@ -414,7 +414,7 @@ class AS7331:  # noqa: PLR0904
         """
         return self._one_shot_raw()
 
-    def one_shot(self) -> Tuple(float, float, float):
+    def one_shot(self) -> Tuple[float, float, float]:
         """Perform a single measurement in command mode and return irradiance.
 
         Configures the sensor for CMD mode, triggers a measurement,
