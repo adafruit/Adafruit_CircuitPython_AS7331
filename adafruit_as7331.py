@@ -71,46 +71,81 @@ _SENS_UVC = 794.0
 
 # Gain settings
 GAIN_2048X = const(0)
+"""2048x gain (highest sensitivity)."""
 GAIN_1024X = const(1)
+"""1024x gain."""
 GAIN_512X = const(2)
+"""512x gain."""
 GAIN_256X = const(3)
+"""256x gain."""
 GAIN_128X = const(4)
+"""128x gain."""
 GAIN_64X = const(5)
+"""64x gain."""
 GAIN_32X = const(6)
+"""32x gain."""
 GAIN_16X = const(7)
+"""16x gain."""
 GAIN_8X = const(8)
+"""8x gain."""
 GAIN_4X = const(9)
+"""4x gain."""
 GAIN_2X = const(10)
+"""2x gain."""
 GAIN_1X = const(11)
+"""1x gain (lowest sensitivity)."""
 
 # Integration time settings
 TIME_1MS = const(0)
+"""1 ms integration time."""
 TIME_2MS = const(1)
+"""2 ms integration time."""
 TIME_4MS = const(2)
+"""4 ms integration time."""
 TIME_8MS = const(3)
+"""8 ms integration time."""
 TIME_16MS = const(4)
+"""16 ms integration time."""
 TIME_32MS = const(5)
+"""32 ms integration time."""
 TIME_64MS = const(6)
+"""64 ms integration time."""
 TIME_128MS = const(7)
+"""128 ms integration time."""
 TIME_256MS = const(8)
+"""256 ms integration time."""
 TIME_512MS = const(9)
+"""512 ms integration time."""
 TIME_1024MS = const(10)
+"""1024 ms integration time."""
 TIME_2048MS = const(11)
+"""2048 ms integration time."""
 TIME_4096MS = const(12)
+"""4096 ms integration time."""
 TIME_8192MS = const(13)
+"""8192 ms integration time."""
 TIME_16384MS = const(14)
+"""16384 ms integration time."""
 
 # Measurement modes
 MODE_CONT = const(0)
+"""Continuous measurement mode."""
 MODE_CMD = const(1)
+"""Command mode (single measurement)."""
 MODE_SYNS = const(2)
+"""Synchronized start mode."""
 MODE_SYND = const(3)
+"""Synchronized data mode."""
 
 # Clock frequency settings
 CLOCK_1024KHZ = const(0)
+"""1.024 MHz clock."""
 CLOCK_2048KHZ = const(1)
+"""2.048 MHz clock."""
 CLOCK_4096KHZ = const(2)
+"""4.096 MHz clock."""
 CLOCK_8192KHZ = const(3)
+"""8.192 MHz clock."""
 
 
 class AS7331:  # noqa: PLR0904
